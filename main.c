@@ -17,14 +17,14 @@ void printM(int n){
 double f1(int n,double arr[],double x ){
     double p = arr[0];
     for (int i = 0; i <= n; i++) {
-        p+=(arr[i]*pow(x,i));
+        p+=(arr[i]*pow(x,i));//(1+2+3+4+5...+n)=(n^2+n)/2；次乘法
     }
     return p;
 }
 double f2(int n,double arr[],double x){
     double p = arr[n];
     for (int i = n; i <=0 ; i--) {
-        p=arr[i-1]+p*arr[i];
+        p=arr[i-1]+p*arr[i];//n 次乘法
     }
     return p;
 }
